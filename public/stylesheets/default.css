@@ -1,0 +1,27 @@
+.big_class {
+  font-size: 100px;
+}
+
+.chart {
+  min-width: 320px;
+  max-width: 1000px;
+  height: 220px;
+  margin: 0 auto;
+}
+
+.gauge {
+  min-width: 320px;
+  max-width: 1000px;
+  height: 220px;
+  margin: 0 auto;
+}
+
+#container-speed {
+  width: 300px;
+  height: 200px;
+  float: left;
+}
+
+#pumper {
+  font-size: 130px;
+}

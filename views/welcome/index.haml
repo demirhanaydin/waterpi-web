@@ -1,0 +1,18 @@
+%head
+  %script{type: "text/javascript", src: url('/javascripts/jquery.min.js')}
+  %script{type: "text/javascript", src: url('/javascripts/highcharts.js')}
+  %script{type: "text/javascript", src: url('/javascripts/highcharts-more.js')}
+  %script{type: "text/javascript", src: url('/javascripts/solid-gauge.js')}
+  %script{type: "text/javascript", src: url('/javascripts/synchronized-charts.js')}
+  %script{type: "text/javascript", src: url('/javascripts/water-level-chart.js')}
+  %script{type: "text/javascript", src: url('/javascripts/water-pump.js')}
+  %link{rel: :stylesheet, type: :"text/css", href: url('/stylesheets/default.css')}
+#container
+  #synchronized
+  .gauge
+    #container-speed
+    .pump-control
+      %form{method: :post, action: '/take-action', id: 'action-form' }
+        %input{type: 'hidden', name: 'action', value: 'start', id: 'action_input'}
+        %span{id: 'pumper', onclick: 'takeAction()'}
+          start
